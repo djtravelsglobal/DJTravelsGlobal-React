@@ -132,11 +132,14 @@ const LandingPage = (props) => {
         <h1>Top Cruise Line DEALS</h1>
         <span className="landing-page-text11">Exclusive Offers</span>
         <div className="landing-page-cards-container Button">
-          <PlaceCard
-            city="Celebrity Cruises"
-            image="/celebrity-cruises-3-logo-png-transparent-300h.png"
-            description="Elevating luxury at sea, Celebrity Cruises offers modern sophistication. Gourmet dining, spacious accommodations, and personalized service are accompanied by unique features like rooftop terraces and immersive entertainment."
-          ></PlaceCard>
+          <Link to="/celebrity-cruises" className="landing-page-navlink1">
+            <PlaceCard
+              city="Celebrity Cruises"
+              image="/celebrity-cruises-3-logo-png-transparent-300h.png"
+              description="Elevating luxury at sea, Celebrity Cruises offers modern sophistication. Gourmet dining, spacious accommodations, and personalized service are accompanied by unique features like rooftop terraces and immersive entertainment."
+              className="landing-page-celebrity"
+            ></PlaceCard>
+          </Link>
           <a
             href="https://www.virginvoyages.com/book/voyage-planner/find-a-voyage?cabins=1&amp;USD[%E2%80%A6]lors=2&amp;toDate=2022-10-04&amp;agentId=20324&amp;agencyId=450"
             target="_blank"

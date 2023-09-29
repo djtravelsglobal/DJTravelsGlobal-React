@@ -217,6 +217,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.landing-page-navlink1 {
+  display: contents;
+}
+.landing-page-celebrity {
+  text-decoration: none;
+}
 .landing-page-link05 {
   display: contents;
 }
