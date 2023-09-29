@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import SolidButton from '../components/solid-button'
+import OutlineButton from '../components/outline-button'
 import PlaceCard from '../components/place-card'
 import './landing-page.css'
 
@@ -132,14 +133,28 @@ const LandingPage = (props) => {
         <h1>Top Cruise Line DEALS</h1>
         <span className="landing-page-text11">Exclusive Offers</span>
         <div className="landing-page-cards-container Button">
-          <Link to="/celebrity-cruises" className="landing-page-navlink1">
-            <PlaceCard
-              city="Celebrity Cruises"
-              image="/celebrity-cruises-3-logo-png-transparent-300h.png"
-              description="Elevating luxury at sea, Celebrity Cruises offers modern sophistication. Gourmet dining, spacious accommodations, and personalized service are accompanied by unique features like rooftop terraces and immersive entertainment."
-              className="landing-page-celebrity"
-            ></PlaceCard>
-          </Link>
+          <div className="landing-page-container1">
+            <img
+              alt="image"
+              src="/celebrity-cruises-3-logo-png-transparent-300h.png"
+              className="landing-page-image1"
+            />
+            <div className="landing-page-container2">
+              <span className="landing-page-text12">Celebrity Cruises</span>
+              <span className="landing-page-text13">
+                Elevating luxury at sea, Celebrity Cruises offers modern
+                sophistication. Gourmet dining, spacious accommodations, and
+                personalized service are accompanied by unique features like
+                rooftop terraces and immersive entertainment.
+              </span>
+              <Link to="/celebrity-cruises" className="landing-page-navlink1">
+                <OutlineButton
+                  button1="Discover place"
+                  className="landing-page-component3"
+                ></OutlineButton>
+              </Link>
+            </div>
+          </div>
           <a
             href="https://www.virginvoyages.com/book/voyage-planner/find-a-voyage?cabins=1&amp;USD[%E2%80%A6]lors=2&amp;toDate=2022-10-04&amp;agentId=20324&amp;agencyId=450"
             target="_blank"
@@ -187,7 +202,7 @@ const LandingPage = (props) => {
             </h2>
           </a>
           <div className="landing-page-links-container2">
-            <div className="landing-page-container1">
+            <div className="landing-page-container3">
               <a
                 href="https://example.com"
                 target="_blank"
@@ -222,7 +237,7 @@ const LandingPage = (props) => {
                 <br></br>
               </a>
             </div>
-            <div className="landing-page-container2">
+            <div className="landing-page-container4">
               <a
                 href="https://example.com"
                 target="_blank"
@@ -258,7 +273,7 @@ const LandingPage = (props) => {
             </div>
           </div>
           <div className="landing-page-follow-container1">
-            <span className="landing-page-text16">
+            <span className="landing-page-text18">
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
