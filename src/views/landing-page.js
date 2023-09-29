@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -22,10 +23,12 @@ const LandingPage = (props) => {
           />
           <div className="landing-page-right-side">
             <div className="landing-page-links-container">
-              <span className="landing-page-text">Home</span>
-              <span className="landing-page-text01">About</span>
-              <span className="landing-page-text02">Cruise Packages</span>
-              <span className="landing-page-text03">90-Ticker Deals</span>
+              <Link to="/" className="landing-page-navlink">
+                Home
+              </Link>
+              <span className="landing-page-text">About</span>
+              <span className="landing-page-text01">Cruise Packages</span>
+              <span className="landing-page-text02">90-Ticker Deals</span>
             </div>
             <a href="#main-section" className="landing-page-link">
               <SolidButton button="BOOK NOW"></SolidButton>
@@ -53,9 +56,9 @@ const LandingPage = (props) => {
               </div>
               <div className="landing-page-right-side1">
                 <div className="landing-page-links-container1">
-                  <span className="landing-page-text04">Home</span>
-                  <span className="landing-page-text05">About</span>
-                  <span className="landing-page-text06">Tour Packages</span>
+                  <span className="landing-page-text03">Home</span>
+                  <span className="landing-page-text04">About</span>
+                  <span className="landing-page-text05">Tour Packages</span>
                   <span>Contact</span>
                 </div>
                 <a href="#main-section" className="landing-page-link01">
@@ -64,7 +67,7 @@ const LandingPage = (props) => {
               </div>
             </div>
             <div className="landing-page-follow-container">
-              <span className="landing-page-text08">
+              <span className="landing-page-text07">
                 Follow us on
                 <span
                   dangerouslySetInnerHTML={{
@@ -118,57 +121,75 @@ const LandingPage = (props) => {
         </nav>
         <div className="landing-page-hero">
           <div className="landing-page-content-container">
-            <h1 className="Heading landing-page-text09">Book an exclusive</h1>
-            <h2 className="Subheading landing-page-subheading">getaway now</h2>
+            <h1 className="Heading landing-page-text08">Exclusive Deals</h1>
+            <h2 className="Subheading landing-page-subheading">Getaway now</h2>
             <SolidButton button="Explore DEALS"></SolidButton>
-            <span className="landing-page-text10">.</span>
+            <span className="landing-page-text09">.</span>
           </div>
         </div>
       </div>
       <div id="main-section" className="landing-page-main">
         <h1>Top Cruise Line DEALS</h1>
-        <span className="landing-page-text12">Exclusive Offers</span>
-        <div className="landing-page-cards-container">
+        <span className="landing-page-text11">Exclusive Offers</span>
+        <div className="landing-page-cards-container Button">
           <PlaceCard
             city="Celebrity Cruises"
             image="/celebrity-cruises-3-logo-png-transparent-300h.png"
+            description="Elevating luxury at sea, Celebrity Cruises offers modern sophistication. Gourmet dining, spacious accommodations, and personalized service are accompanied by unique features like rooftop terraces and immersive entertainment."
           ></PlaceCard>
-          <PlaceCard
-            city="Virgin Voyages"
-            image="/virgin_voyages_logo.svg-300w.png"
-            rootClassName="place-card-root-class-name"
-          ></PlaceCard>
+          <a
+            href="https://www.virginvoyages.com/book/voyage-planner/find-a-voyage?cabins=1&amp;USD[%E2%80%A6]lors=2&amp;toDate=2022-10-04&amp;agentId=20324&amp;agencyId=450"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="landing-page-link05"
+          >
+            <PlaceCard
+              city="Virgin Voyages"
+              image="/virgin_voyages_logo-300h.jpg"
+              image_alt="50px"
+              description="With the hottest itineraries and ships at sea, Virgin is redefining luxury cruises for adults with a modern and rebellious flair, featuring stylish design, immersive entertainment, and a focus on wellness."
+              rootClassName="place-card-root-class-name"
+              className="landing-page-virgin"
+            ></PlaceCard>
+          </a>
           <PlaceCard
             city="Royal Caribbean"
-            image="/b91c5c6babde2bd433ddf0a7b95b524f-300h.jpg"
+            image="/rc-300h.jpg"
+            description="Known for innovative ship designs and onboard attractions like rock-climbing walls, surf simulators, and Broadway-style entertainment. Offers a variety of itineraries to popular destinations.."
           ></PlaceCard>
           <PlaceCard
             city="Princess Cruises"
-            image="/princess_cruises_logo.svg"
+            image="/pcl_logo_lg-300h.jpg"
+            description=" Embracing the traditional charm of cruising, Princess Cruises provides a balanced mix of relaxation and entertainment. Passengers can indulge in exquisite cuisine, enjoy captivating live performances, and explore diverse ports of call."
+            rootClassName="place-card-root-class-name1"
           ></PlaceCard>
           <PlaceCard
             city="Norwegian Cruise Line"
             image="/ad1e1b13677111.56276c4308346-300h.png"
+            description='At the forefront of "freestyle cruising," Norwegian allows passengers to dine and entertain as they please. Their ships are plentiful with, Broadway-caliber performances, and unique amenities like onboard go-karts and virtual reality experiences.'
           ></PlaceCard>
           <PlaceCard
             city="Carnival"
-            image="/channels4_profile-300h.jpg"
+            image="/carnival-300h.jpg"
+            description="A vibrant and festive cruise experience awaits on Carnival ships. Packed with energetic entertainment, from water parks and Broadway-style shows to themed parties, they're a popular choice for those seeking fun-filled vacations without breaking the bank."
           ></PlaceCard>
         </div>
       </div>
       <div className="landing-page-footer">
         <div className="landing-page-menu">
-          <h1>
-            <span>PHONE</span>
-            <br></br>
-          </h1>
+          <a href="tel:813-438-6069" className="landing-page-link06">
+            <h2 className="landing-page-logo1">
+              <span>PHONE</span>
+              <br></br>
+            </h2>
+          </a>
           <div className="landing-page-links-container2">
             <div className="landing-page-container1">
               <a
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link05"
+                className="landing-page-link07"
               >
                 Tour packages
               </a>
@@ -176,7 +197,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link06"
+                className="landing-page-link08"
               >
                 Personalized offers
               </a>
@@ -184,7 +205,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link07"
+                className="landing-page-link09"
               >
                 Special deals
               </a>
@@ -192,7 +213,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link08"
+                className="landing-page-link10"
               >
                 <span>DINK Specials;)</span>
                 <br></br>
@@ -203,7 +224,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link09"
+                className="landing-page-link11"
               >
                 About us
               </a>
@@ -211,7 +232,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link10"
+                className="landing-page-link12"
               >
                 FAQ
               </a>
@@ -219,7 +240,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link11"
+                className="landing-page-link13"
               >
                 Terms and conditions
               </a>
@@ -227,14 +248,14 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link12"
+                className="landing-page-link14"
               >
                 Contact
               </a>
             </div>
           </div>
           <div className="landing-page-follow-container1">
-            <span className="landing-page-text17">
+            <span className="landing-page-text16">
               Follow us on
               <span
                 dangerouslySetInnerHTML={{
@@ -247,7 +268,7 @@ const LandingPage = (props) => {
                 href="https://instagram.com/djtravelsglobal"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link13"
+                className="landing-page-link15"
               >
                 <svg
                   viewBox="0 0 877.7142857142857 1024"
