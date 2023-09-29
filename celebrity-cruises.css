@@ -1,0 +1,252 @@
+.solid-button-container {
+  display: flex;
+  position: relative;
+}
+.solid-button-button {
+  color: var(--dl-color-gray-white);
+  border: none;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-doubleunit);
+  border-radius: 50px;
+  padding-right: var(--dl-space-space-doubleunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: var(--dl-color-primary-100);
+}
+
+.celebrity-cruises-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.celebrity-cruises-navbar {
+  width: 1146;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  max-width: 1000px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.celebrity-cruises-image {
+  width: 318px;
+  height: 40px;
+  object-fit: cover;
+}
+.celebrity-cruises-right-side {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.celebrity-cruises-links-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.celebrity-cruises-navlink {
+  margin-right: var(--dl-space-space-doubleunit);
+  text-decoration: none;
+}
+.celebrity-cruises-text {
+  margin-right: var(--dl-space-space-doubleunit);
+}
+.celebrity-cruises-text01 {
+  margin-right: var(--dl-space-space-doubleunit);
+}
+.celebrity-cruises-text02 {
+  margin-right: var(--dl-space-space-doubleunit);
+}
+.celebrity-cruises-burger-menu {
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.celebrity-cruises-burger-menu {
+  width: 24px;
+  height: 24px;
+}
+.celebrity-cruises-mobile-menu {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  padding: var(--dl-space-space-doubleunit);
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.celebrity-cruises-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.celebrity-cruises-top {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-doubleunit);
+  flex-direction: row;
+  justify-content: space-between;
+}
+.celebrity-cruises-close-menu {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.celebrity-cruises-icon03 {
+  width: 24px;
+  height: 24px;
+}
+.celebrity-cruises-right-side1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.celebrity-cruises-links-container1 {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.celebrity-cruises-text03 {
+  margin-bottom: 8px;
+}
+.celebrity-cruises-text04 {
+  margin-bottom: 8px;
+}
+.celebrity-cruises-text05 {
+  margin-bottom: 8px;
+}
+.celebrity-cruises-follow-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.celebrity-cruises-text07 {
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.celebrity-cruises-icons-container {
+  width: 100px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.celebrity-cruises-link {
+  display: contents;
+}
+.celebrity-cruises-icon05 {
+  width: 24px;
+  height: 24px;
+}
+.celebrity-cruises-link1 {
+  display: contents;
+}
+.celebrity-cruises-icon07 {
+  width: 24px;
+  height: 24px;
+}
+.celebrity-cruises-link2 {
+  display: contents;
+}
+.celebrity-cruises-icon09 {
+  width: 24px;
+  height: 24px;
+}
+.celebrity-cruises-banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+  padding-left: 48px;
+  padding-right: 48px;
+  flex-direction: column;
+  padding-bottom: 64px;
+  background-size: cover;
+  justify-content: space-between;
+  background-image: url('https://images.unsplash.com/photo-1485628390555-1a7bd503f9fe?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE3fHxhcmNoaXRlY3R1cmUlMjBtaW5pbWFsfGVufDB8fHx8MTYyNjE4NDA0Mg&ixlib=rb-1.2.1&w=1500');
+  background-position: center;
+}
+.celebrity-cruises-text08 {
+  font-size: 0.75rem;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 32px;
+  letter-spacing: 2px;
+}
+.celebrity-cruises-text09 {
+  max-width: 1400px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.celebrity-cruises-text12 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: var(--dl-space-space-unit);
+}
+@media(max-width: 1200px) {
+  .celebrity-cruises-right-side {
+    justify-content: flex-start;
+  }
+  .celebrity-cruises-banner {
+    background-image: url("public/featured_banner_fleet_1-1500w.jpg");
+  }
+  .celebrity-cruises-text08 {
+    width: auto;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .celebrity-cruises-text12 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin-right: 520px;
+  }
+}
+@media(max-width: 991px) {
+  .celebrity-cruises-text09 {
+    width: 100%;
+  }
+}
+@media(max-width: 767px) {
+  .celebrity-cruises-right-side {
+    display: none;
+  }
+  .celebrity-cruises-burger-menu {
+    display: flex;
+  }
+  .celebrity-cruises-banner {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .celebrity-cruises-text09 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 479px) {
+  .celebrity-cruises-banner {
+    padding-top: 48px;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: 48px;
+  }
+}
