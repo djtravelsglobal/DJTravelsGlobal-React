@@ -147,19 +147,24 @@ const LandingPage = (props) => {
                 personalized service are accompanied by unique features like
                 rooftop terraces and immersive entertainment.
               </span>
-              <Link to="/celebrity-cruises" className="landing-page-navlink1">
+              <a
+                href="https://www.djtravelsglobal.com/celebrity-cruises"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="landing-page-link05"
+              >
                 <OutlineButton
                   button1="Discover place"
                   className="landing-page-component3"
                 ></OutlineButton>
-              </Link>
+              </a>
             </div>
           </div>
           <a
             href="https://www.virginvoyages.com/book/voyage-planner/find-a-voyage?cabins=1&amp;USD[%E2%80%A6]lors=2&amp;toDate=2022-10-04&amp;agentId=20324&amp;agencyId=450"
             target="_blank"
             rel="noreferrer noopener"
-            className="landing-page-link05"
+            className="landing-page-link06"
           >
             <PlaceCard
               city="Virgin Voyages"
@@ -195,7 +200,7 @@ const LandingPage = (props) => {
       </div>
       <div className="landing-page-footer">
         <div className="landing-page-menu">
-          <a href="tel:813-438-6069" className="landing-page-link06">
+          <a href="tel:813-438-6069" className="landing-page-link07">
             <h2 className="landing-page-logo1">
               <span>PHONE</span>
               <br></br>
@@ -207,7 +212,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link07"
+                className="landing-page-link08"
               >
                 Tour packages
               </a>
@@ -215,7 +220,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link08"
+                className="landing-page-link09"
               >
                 Personalized offers
               </a>
@@ -223,7 +228,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link09"
+                className="landing-page-link10"
               >
                 Special deals
               </a>
@@ -231,7 +236,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link10"
+                className="landing-page-link11"
               >
                 <span>DINK Specials;)</span>
                 <br></br>
@@ -242,7 +247,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link11"
+                className="landing-page-link12"
               >
                 About us
               </a>
@@ -250,7 +255,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link12"
+                className="landing-page-link13"
               >
                 FAQ
               </a>
@@ -258,7 +263,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link13"
+                className="landing-page-link14"
               >
                 Terms and conditions
               </a>
@@ -266,7 +271,7 @@ const LandingPage = (props) => {
                 href="https://example.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link14"
+                className="landing-page-link15"
               >
                 Contact
               </a>
@@ -286,7 +291,7 @@ const LandingPage = (props) => {
                 href="https://instagram.com/djtravelsglobal"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="landing-page-link15"
+                className="landing-page-link16"
               >
                 <svg
                   viewBox="0 0 877.7142857142857 1024"
